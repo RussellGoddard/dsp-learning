@@ -2,7 +2,7 @@
 //  main.cpp
 //  dsp-learning
 //
-//  Created by Frobu on 8/4/24.
+//  Created by Me on 8/4/24.
 //
 
 #include <iostream>
