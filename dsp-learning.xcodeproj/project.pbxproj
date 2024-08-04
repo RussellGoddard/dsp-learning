@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DEDD70D22C602AE600FAADD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDD70D12C602AE600FAADD9 /* main.cpp */; };
+		DEDD70DA2C6032B900FAADD9 /* encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDD70D82C6032B900FAADD9 /* encoder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		DEDD70CE2C602AE600FAADD9 /* dsp-learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dsp-learning"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDD70D12C602AE600FAADD9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DEDD70D82C6032B900FAADD9 /* encoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = encoder.cpp; sourceTree = "<group>"; };
+		DEDD70D92C6032B900FAADD9 /* encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = encoder.hpp; sourceTree = "<group>"; };
+		DEDD70DC2C6041E500FAADD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,9 @@
 		DEDD70C52C602AE600FAADD9 = {
 			isa = PBXGroup;
 			children = (
-				DEDD70D02C602AE600FAADD9 /* dsp-learning */,
+				DEDD70DC2C6041E500FAADD9 /* README.md */,
+				DEDD70D12C602AE600FAADD9 /* main.cpp */,
+				DEDD70DB2C60338600FAADD9 /* wave */,
 				DEDD70CF2C602AE600FAADD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +60,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEDD70D02C602AE600FAADD9 /* dsp-learning */ = {
+		DEDD70DB2C60338600FAADD9 /* wave */ = {
 			isa = PBXGroup;
 			children = (
-				DEDD70D12C602AE600FAADD9 /* main.cpp */,
+				DEDD70D82C6032B900FAADD9 /* encoder.cpp */,
+				DEDD70D92C6032B900FAADD9 /* encoder.hpp */,
 			);
-			path = "dsp-learning";
+			path = wave;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDD70DA2C6032B900FAADD9 /* encoder.cpp in Sources */,
 				DEDD70D22C602AE600FAADD9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
