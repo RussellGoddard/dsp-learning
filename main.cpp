@@ -3,10 +3,10 @@
 
 
 #include <iostream>
-#include "wave/encoder.hpp"
+#include "wave/decoder.hpp"
 
 int main(int argc, const char * argv[]) {
-    wave::encoderMain();
+    wave::decoderMain();
     std::cout << "Nothing crashed this time, remember to turn down the volume";
     return 0;
 }

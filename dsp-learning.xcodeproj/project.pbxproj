@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE4CBF5A2C6329FE00F356B0 /* encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE4CBF582C6329FE00F356B0 /* encoder.cpp */; };
 		DEDD70D22C602AE600FAADD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDD70D12C602AE600FAADD9 /* main.cpp */; };
-		DEDD70DA2C6032B900FAADD9 /* encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDD70D82C6032B900FAADD9 /* encoder.cpp */; };
+		DEDD70DA2C6032B900FAADD9 /* decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDD70D82C6032B900FAADD9 /* decoder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE4CBF582C6329FE00F356B0 /* encoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = encoder.cpp; sourceTree = "<group>"; };
+		DE4CBF592C6329FE00F356B0 /* encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = encoder.hpp; sourceTree = "<group>"; };
+		DE4CBF5B2C632AC700F356B0 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		DE4CBF5C2C632D5500F356B0 /* waveFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = waveFormat.h; sourceTree = "<group>"; };
 		DEDD70CE2C602AE600FAADD9 /* dsp-learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dsp-learning"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDD70D12C602AE600FAADD9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		DEDD70D82C6032B900FAADD9 /* encoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = encoder.cpp; sourceTree = "<group>"; };
-		DEDD70D92C6032B900FAADD9 /* encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = encoder.hpp; sourceTree = "<group>"; };
+		DEDD70D82C6032B900FAADD9 /* decoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = decoder.cpp; sourceTree = "<group>"; };
+		DEDD70D92C6032B900FAADD9 /* decoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = decoder.hpp; sourceTree = "<group>"; };
 		DEDD70DC2C6041E500FAADD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +68,12 @@
 		DEDD70DB2C60338600FAADD9 /* wave */ = {
 			isa = PBXGroup;
 			children = (
-				DEDD70D82C6032B900FAADD9 /* encoder.cpp */,
-				DEDD70D92C6032B900FAADD9 /* encoder.hpp */,
+				DE4CBF582C6329FE00F356B0 /* encoder.cpp */,
+				DE4CBF592C6329FE00F356B0 /* encoder.hpp */,
+				DEDD70D82C6032B900FAADD9 /* decoder.cpp */,
+				DEDD70D92C6032B900FAADD9 /* decoder.hpp */,
+				DE4CBF5B2C632AC700F356B0 /* definitions.h */,
+				DE4CBF5C2C632D5500F356B0 /* waveFormat.h */,
 			);
 			path = wave;
 			sourceTree = "<group>";
@@ -126,8 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDD70DA2C6032B900FAADD9 /* encoder.cpp in Sources */,
+				DEDD70DA2C6032B900FAADD9 /* decoder.cpp in Sources */,
 				DEDD70D22C602AE600FAADD9 /* main.cpp in Sources */,
+				DE4CBF5A2C6329FE00F356B0 /* encoder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
