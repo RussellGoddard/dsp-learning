@@ -1,8 +1,5 @@
-//
 //  decoder.hpp
-//  dsp-learning
 //  lesson from: https://mu.krj.st/wave/
-
 
 #ifndef decoder_hpp
 #define decoder_hpp

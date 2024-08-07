@@ -1,4 +1,4 @@
-//
+// waveFormat.hpp
 
 #ifndef waveFormat_h
 #define waveFormat_h

@@ -1,7 +1,5 @@
 //  decoder.cpp
-//  dsp-learning
 //  lesson from: https://mu.krj.st/wave/
-
 
 #include "decoder.hpp"
 

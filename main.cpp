@@ -1,5 +1,4 @@
 //  main.cpp
-//  dsp-learning
 
 
 #include <iostream>

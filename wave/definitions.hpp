@@ -1,7 +1,4 @@
-//
-//  definitions.h
-//  dsp-learning
-
+//  definitions.hpp
 
 #ifndef definitions_h
 #define definitions_h
