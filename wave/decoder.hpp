@@ -1,17 +1,20 @@
 //  decoder.hpp
-//  lesson from: https://mu.krj.st/wave/
+//  lesson from: https://mu.krj.st/assignments/wave_s.html
 
-#ifndef decoder_hpp
-#define decoder_hpp
+#ifndef encoder_hpp
+#define encoder_hpp
 
+#include <algorithm>
 #include <cstdio>
-#include <cstring>
+#include <fstream>
+#include <iostream>
+#include <vector>
 
-#include "definitions.h"
-#include "waveFormat.h"
+#include "definitions.hpp"
+#include "waveFormat.hpp"
 
 namespace wave {
     int decoderMain();
 }
 
-#endif /* decoder_hpp */
+#endif /* encoder_hpp */
