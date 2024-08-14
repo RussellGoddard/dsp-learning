@@ -6,7 +6,7 @@
 #include "wave/encoder.hpp"
 
 int main(int argc, const char * argv[]) {
-    wave::encoderMain();
-    std::cout << "Nothing crashed this time, remember to turn down the volume";
+    wave::decoderMain();
+    std::cout << "Nothing crashed this time, remember to turn down the volume" << std::endl;
     return 0;
 }
