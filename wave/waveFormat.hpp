@@ -4,7 +4,6 @@
 #define waveFormat_h
 
 #include <cstdint>
-#include <cmath>
 
 namespace wave {
     struct riffHeader {

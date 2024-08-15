@@ -4,8 +4,6 @@
 #ifndef decoder_hpp
 #define decoder_hpp
 
-#include <cstdio>
-#include <cstring>
 #include <fstream>
 #include <iostream>
 #include <vector>
