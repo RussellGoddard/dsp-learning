@@ -30,41 +30,17 @@ void buildWavHeader(wave::wavHeader &header) {
 }
 
 void buildAudio(std::vector<bitDepth> &audio) {
-    for (size_t i = 0; i < NSAMPLES; ++i) {
+    for (size_t i = 0; i < audio.size(); ++i) {
         audio[i] = lrint(SAMPLE_MAX*sin(2*M_PI * 440 * i/SR));
     }
 }
 
-static FILE *fileStream;
-
 int wave::encoderMain() {
     wave::wavHeader wavHeader;
     std::vector<bitDepth> audio(NSAMPLES);
-    bitDepth buffer[NSAMPLES];
     
     buildWavHeader(wavHeader);
     buildAudio(audio);
-    
-//    fileStream = fopen("output.wav", "wb");
-//        if (!fileStream) {
-//            return 0;
-//        }
-//    
-    for (size_t i = 0; i < NSAMPLES; ++i) {
-           buffer[i] = lrint(SAMPLE_MAX*sin(2*M_PI * 440 * i/SR));
-       }
-    
-////    std::cout << sizeof(buffer) << std::endl;
-////    std::cout << sizeof(bitDepth) * audio.size() << std::endl;
-//    
-////    if (fwrite(&wavHeader, sizeof(struct wave::wavHeader), 1, fileStream) != 1) {
-////        fclose(fileStream);
-////        return 0;
-////    }
-////    
-////    fwrite(reinterpret_cast<int16_t*>(&audio), sizeof(bitDepth) * audio.size(), 1, fileStream);
-//    fclose(fileStream);
-    
     
     std::ofstream outputFile(testOutputFileName, std::ios::out | std::ios::binary);
     if (outputFile.is_open()) {
@@ -72,7 +48,7 @@ int wave::encoderMain() {
             return -1;
         }
         
-        if (!outputFile.write(reinterpret_cast<char*>(&audio), sizeof(bitDepth) * audio.size() - 1)) {
+        if (!outputFile.write(reinterpret_cast<char*>(&audio[0]), sizeof(bitDepth) * audio.size())) {
             return -1;
         }
         
