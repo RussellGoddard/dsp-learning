@@ -6,6 +6,9 @@
 
 #include <cstdio>
 #include <cstring>
+#include <fstream>
+#include <iostream>
+#include <vector>
 
 #include "definitions.hpp"
 #include "waveFormat.hpp"

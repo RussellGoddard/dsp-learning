@@ -3,7 +3,7 @@
 
 #include "decoder.hpp"
 
-std::string testFileName = "output.wav";
+std::string testInputFileName = "output.wav";
 
 int getAudio(std::string fileName, std::vector<char> &buffer, wave::wavHeader &wavInfo) {
     std::ifstream inputFile(fileName, std::ios::in | std::ios::binary);
@@ -122,7 +122,7 @@ int wave::decoderMain() {
     std::vector<char> buffer;
     struct wave::wavHeader wavInfo;
     
-    int success = getAudio(testFileName, buffer, wavInfo);
+    int success = getAudio(testInputFileName, buffer, wavInfo);
     
     if (success != 0) {
         std::cerr << "Get Audio returned error: " + std::to_string(success) << std::endl;

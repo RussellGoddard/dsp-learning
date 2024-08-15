@@ -14,7 +14,7 @@ typedef int16_t bitDepth; // bit depth
 #define DURATION 5
 #define SR 44100
 #define NCHANNELS 1
-#define NSAMPLES (NCHANNELS*DURATION*SR)
+#define NSAMPLES (NCHANNELS * DURATION * SR)
 
 
 #endif /* definitions_h */
